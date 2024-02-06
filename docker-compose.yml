@@ -2,9 +2,7 @@ version: '3'
 
 services:
   apache:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: anderpr/apache:v1
     ports:
       - "80:80"
     depends_on:
